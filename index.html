@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+    </head>
+    <body> 
+        <div id="app">
+
+            <button v-on:click="getaddressdata">Get Address History</button>
+            <input v-model="address">
+            <li v-for="tx in outflows">
+            	{{tx}}
+    		</li>
+        	</div>
+        <script src="index.js"></script>
+    </body>
+</html>
